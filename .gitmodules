@@ -1,0 +1,3 @@
+[submodule "alvium-csi2-driver"]
+	path = alvium-csi2-driver
+	url = ../alvium-csi2-driver.git
