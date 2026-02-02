@@ -18,6 +18,8 @@ HARDWARE AND DOCUMENTATION.
 - Rapsberry CM5 + CM5IO carrier
 ### Cameras
 - Alvium C series camera with FW14
+- Adapter Board Alvium CSI-2, part number 22560
+- FPC Cable Alvium CSI-2, e.g. 120mm part number 12316
 
 ## Installing 
 The installation instructions are tested with the Raspberry Pi OS, but should work for every Debian based Linux distribution.
