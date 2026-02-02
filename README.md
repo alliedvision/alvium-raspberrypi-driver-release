@@ -16,7 +16,7 @@ HARDWARE AND DOCUMENTATION.
 ### SoMs + Carrier Boards 
 - Raspberry PI 5 B
 - Rapsberry CM5 + CM5IO carrier
-### Cameras
+### Cameras + Adapter Board
 - Alvium C series camera with FW14
 - Adapter Board Alvium CSI-2, part number 22560
 - FPC Cable Alvium CSI-2, e.g. 120mm part number 12316
