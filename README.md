@@ -15,7 +15,7 @@ HARDWARE AND DOCUMENTATION.
 ## Compatibilty 
 ### SoMs + Carrier Boards 
 - Raspberry PI 5 B
-- Rapsberry CM5 + CM5IO carrier
+- Raspberry CM5 + CM5IO carrier
 ### Cameras + Adapter Board
 - Alvium C series camera with FW14
 - Adapter Board Alvium CSI-2, part number 22560
@@ -61,6 +61,10 @@ The Raspberry Pi 5 driver expose 5 media device by default. Repeat the command f
 rpi@pi5:~ $ media-ctl -d2 -p |grep avt
                 <- "avt_csi2 10-003c":0 [ENABLED,IMMUTABLE]
 - entity 16: avt_csi2 10-003c (1 pad, 1 link, 0 routes)
+```
+Now the link between the CSI receiver subdevice and the first video device needs to be activated:
+```sh
+media-ctl -d<X> -l '0:4 -> 18:0 [1]'
 ```
 The next step is configuring the CSI2 receiver subdevice. Before this can be done the resolution of the Alvium must be queried using:
 ```sh
