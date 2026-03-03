@@ -64,7 +64,7 @@ rpi@pi5:~ $ media-ctl -d2 -p |grep avt
 ```
 Now the link between the CSI receiver subdevice and the first video device needs to be activated:
 ```sh
-media-ctl -d<X> -l '0:4 -> 18:0 [1]'
+media-ctl -d<X> -l '1:4 -> 18:0 [1]'
 ```
 The next step is configuring the CSI2 receiver subdevice. Before this can be done the resolution of the Alvium must be queried using:
 ```sh
